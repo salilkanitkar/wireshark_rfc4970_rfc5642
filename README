@@ -1,3 +1,12 @@
 Incorporating RFC4970 (Optional Capabilities RI LSA) and RFC5642 (Dynamic Hostname TLV) support for OSPF in wireshark
 dissector. 
 
+I am building my code against Wireshark Version 1.7.0
+The Exact Revision string is: Version 1.7.0 (SVN Rev 39424 from /trunk)
+
+Commands to checkout, compile and buid:
+$ svn co http://anonsvn.wireshark.org/wireshark/trunk/ wireshark
+$ sudo aptitude install build-essential automake autoconf libgtk2.0-dev libglib2.0-dev libpcap0.8-dev flex bison
+$ ./autogen.sh
+$ ./configure 
+$ make
