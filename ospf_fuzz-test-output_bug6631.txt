@@ -1,0 +1,34 @@
+Running ./tshark with args: -nVxr (forever)
+
+Starting pass 1:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 2:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 3:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 4:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 5:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 6:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 7:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 8:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 9:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 10:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 11:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 12:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 13:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 14:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 15:
+    captures/ospf-opaque-10-04.pcap:  OK
+Starting pass 16:
+    captures/ospf-opaque-10-04.pcap: 

@@ -1,0 +1,293 @@
+Frame 1: 642 bytes on wire (5136 bits), 642 bytes captured (5136 bits)
+    Arrival Time: May 26, 2004 12:01:20.383631000 EDT
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1085587280.383631000 seconds
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 1
+    Frame Length: 642 bytes (5136 bits)
+    Capture Length: 642 bytes (5136 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ip:ospf]
+Ethernet II, Src: aa:bb:cc:00:ca:01 (aa:bb:cc:00:ca:01), Dst: aa:bb:cc:00:c9:01 (aa:bb:cc:00:c9:01)
+    Destination: aa:bb:cc:00:c9:01 (aa:bb:cc:00:c9:01)
+        Address: aa:bb:cc:00:c9:01 (aa:bb:cc:00:c9:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: aa:bb:cc:00:ca:01 (aa:bb:cc:00:ca:01)
+        Address: aa:bb:cc:00:ca:01 (aa:bb:cc:00:ca:01)
+        .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IP (0x0800)
+Internet Protocol Version 4, Src: 10.1.1.202 (10.1.1.202), Dst: 10.1.1.201 (10.1.1.201)
+    Version: 4
+    Header length: 20 bytes
+    Differentiated Services Field: 0xc0 (DSCP 0x30: Class Selector 6; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))
+        1100 00.. = Differentiated Services Codepoint: Class Selector 6 (0x30)
+        .... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)
+    Total Length: 628
+    Identification: 0xd43c (54332)
+    Flags: 0x00
+        0... .... = Reserved bit: Not set
+        .0.. .... = Don't fragment: Not set
+        ..0. .... = More fragments: Not set
+    Fragment offset: 0
+    Time to live: 1
+        [Expert Info (Note/Sequence): "Time To Live" only 1]
+            [Message: "Time To Live" only 1]
+            [Severity level: Note]
+            [Group: Sequence]
+    Protocol: OSPF IGP (89)
+    Header checksum: 0xcaa0 [correct]
+        [Good: True]
+        [Bad: False]
+    Source: 10.1.1.202 (10.1.1.202)
+    Destination: 10.1.1.201 (10.1.1.201)
+Open Shortest Path First
+    OSPF Header
+        OSPF Version: 2
+        Message Type: LS Update (4)
+        Packet Length: 608
+        Source OSPF Router: 10.0.0.202 (10.0.0.202)
+        Area ID: 0.0.0.0 (Backbone)
+        Packet Checksum: 0xef5b [incorrect, should be 0xced8]
+        Auth Type: Null
+        Auth Data (none)
+    LS Update Packet
+        Number of LSAs: 4
+        LS Type: Router-LSA
+            LS Age: 9 seconds
+            Do Not Age: False
+            Options: 0x22 (DC, E)
+                0... .... = DN: DN-bit is NOT set
+                .0.. .... = O: O-bit is NOT set
+                ..1. .... = DC: Demand Circuits are supported
+                ...0 .... = L: The packet does NOT contain LLS data block
+                .... 0... = NP: NSSA is NOT supported
+                .... .0.. = MC: NOT Multicast Capable
+                .... ..1. = E: External Routing Capability
+                .... ...0 = MT: NO Multi-Topology Routing
+            Link-State Advertisement Type: Router-LSA (1)
+            Link State ID: 10.0.0.202
+            Advertising Router: 10.0.0.202 (10.0.0.202)
+            LS Sequence Number: 0x80000059
+            LS Checksum: 0x5a12
+            Length: 60
+            Flags: 0x00
+                .... .0.. = V: NO Virtual link endpoint
+                .... ..0. = E: NO AS boundary router
+                .... ...0 = B: NO Area border router
+            Number of Links: 3
+            Type: Stub     ID: 10.0.0.202      Data: 255.255.255.255 Metric: 1
+                IP network/subnet number: 10.0.0.202
+                Link Data: 255.255.255.255
+                Link Type: 3 - Connection to a stub network
+                Number of TOS metrics: 0
+                TOS 0 metric: 1
+            Type: Transit  ID: 10.1.2.202      Data: 10.1.2.202      Metric: 10
+                IP address of Designated Router: 10.1.2.202
+                Link Data: 10.1.2.202
+                Link Type: 2 - Connection to a transit network
+                Number of TOS metrics: 0
+                TOS 0 metric: 10
+            Type: Stub     ID: 10.1.1.0        Data: 255.255.255.0   Metric: 10
+                IP network/subnet number: 10.1.1.0
+                Link Data: 255.255.255.0
+                Link Type: 3 - Connection to a stub network
+                Number of TOS metrics: 0
+                TOS 0 metric: 10
+        LS Type: Opaque LSA, Area-local scope
+            LS Age: 9 seconds
+            Do Not Age: False
+            Options: 0x20 (DC)
+                0... .... = DN: DN-bit is NOT set
+                .0.. .... = O: O-bit is NOT set
+                ..1. .... = DC: Demand Circuits are supported
+                ...0 .... = L: The packet does NOT contain LLS data block
+                .... 0... = NP: NSSA is NOT supported
+                .... .0.. = MC: NOT Multicast Capable
+                .... ..0. = E: NO External Routing Capability
+                .... ...0 = MT: NO Multi-Topology Routing
+            Link-State Advertisement Type: Opaque LSA, Area-local scope (10)
+            Link State ID Opaque Type: Traffic Engineering LSA (1)
+            Link State ID TE-LSA Reserved: 0
+            Link State ID TE-LSA Instance: 2
+            Advertising Router: 10.0.0.202 (10.0.0.202)
+            LS Sequence Number: 0x80000057
+            LS Checksum: 0xa0f6
+            Length: 168
+            MPLS Traffic Engineering LSA
+                Link Information
+                    TLV Type: 2 - Link Information
+                    TLV Length: 144
+                    Link Type: 2 - Multi-access
+                        TLV Type: 1: Link Type
+                        TLV Length: 1
+                        MPLS/TE Link Type: Multi-access (2)
+                    Link ID: 10.1.1.202
+                        TLV Type: 2: Link ID
+                        TLV Length: 4
+                        MPLS/TE Link ID: 10.1.1.202 (10.1.1.202)
+                    Local Interface IP Address
+                        TLV Type: 3: Local Interface IP Address
+                        TLV Length: 4
+                        MPLS/TE Local Interface Address: 10.1.1.202 (10.1.1.202)
+                    Traffic Engineering Metric: 10
+                        TLV Type: 5: Traffic Engineering Metric
+                        TLV Length: 4
+                        Traffic Engineering Metric: 10
+                    Maximum Bandwidth: 1250000 bytes/s (10000000 bits/s)
+                        TLV Type: 6: Maximum Bandwidth
+                        TLV Length: 4
+                        Maximum Bandwidth: 1250000 bytes/s (10000000 bits/s)
+                    Maximum Reservable Bandwidth: 62500 bytes/s (500000 bits/s)
+                        TLV Type: 7: Maximum Reservable Bandwidth
+                        TLV Length: 4
+                        Maximum Reservable Bandwidth: 62500 bytes/s (500000 bits/s)
+                    Unreserved Bandwidth
+                        TLV Type: 8: Unreserved Bandwidth
+                        TLV Length: 32
+                        Pri (or TE-Class) 0: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 1: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 2: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 3: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 4: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 5: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 6: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 7: 62500 bytes/s (500000 bits/s)
+                    Resource Class/Color: 0x00000000
+                        TLV Type: 9: Resource Class/Color
+                        TLV Length: 4
+                        MPLS/TE Link Resource Class/Color: 0x00000000
+                    Unknown Link sub-TLV: 32768
+                        TLV Type: 32768: Unknown sub-TLV
+                        TLV Length: 4
+                        TLV Value
+                    Unknown Link sub-TLV: 32769
+                        TLV Type: 32769: Unknown sub-TLV
+                        TLV Length: 32
+                        TLV Value
+                    Unknown Link sub-TLV: 32770
+                        TLV Type: 32770: Unknown sub-TLV
+                        TLV Length: 4
+                        TLV Value
+        LS Type: Opaque LSA, Area-local scope
+            LS Age: 9 seconds
+            Do Not Age: False
+            Options: 0x20 (DC)
+                0... .... = DN: DN-bit is NOT set
+                .0.. .... = O: O-bit is NOT set
+                ..1. .... = DC: Demand Circuits are supported
+                ...0 .... = L: The packet does NOT contain LLS data block
+                .... 0... = NP: NSSA is NOT supported
+                .... .0.. = MC: NOT Multicast Capable
+                .... ..0. = E: NO External Routing Capability
+                .... ...0 = MT: NO Multi-Topology Routing
+            Link-State Advertisement Type: Opaque LSA, Area-local scope (10)
+            Link State ID Opaque Type: Traffic Engineering LSA (1)
+            Link State ID TE-LSA Reserved: 0
+            Link State ID TE-LSA Instance: 0
+            Advertising Router: 10.0.0.202 (10.0.0.202)
+            LS Sequence Number: 0x80000056
+            LS Checksum: 0x8630
+            Length: 176
+            MPLS Traffic Engineering LSA
+                Router Address: 10.0.0.202
+                    TLV Type: 1 - Router Address
+                    TLV Length: 4
+                    MPLS/TE Router ID: 10.0.0.202 (10.0.0.202)
+                Link Information
+                    TLV Type: 2 - Link Information
+                    TLV Length: 144
+                    Link Type: 2 - Multi-access
+                        TLV Type: 1: Link Type
+                        TLV Length: 1
+                        MPLS/TE Link Type: Multi-access (2)
+                    Link ID: 10.1.2.202
+                        TLV Type: 2: Link ID
+                        TLV Length: 4
+                        MPLS/TE Link ID: 10.1.2.202 (10.1.2.202)
+                    Local Interface IP Address
+                        TLV Type: 3: Local Interface IP Address
+                        TLV Length: 4
+                        MPLS/TE Local Interface Address: 10.1.2.202 (10.1.2.202)
+                    Traffic Engineering Metric: 10
+                        TLV Type: 5: Traffic Engineering Metric
+                        TLV Length: 4
+                        Traffic Engineering Metric: 10
+                    Maximum Bandwidth: 1250000 bytes/s (10000000 bits/s)
+                        TLV Type: 6: Maximum Bandwidth
+                        TLV Length: 4
+                        Maximum Bandwidth: 1250000 bytes/s (10000000 bits/s)
+                    Maximum Reservable Bandwidth: 62500 bytes/s (500000 bits/s)
+                        TLV Type: 7: Maximum Reservable Bandwidth
+                        TLV Length: 4
+                        Maximum Reservable Bandwidth: 62500 bytes/s (500000 bits/s)
+                    Unreserved Bandwidth
+                        TLV Type: 8: Unreserved Bandwidth
+                        TLV Length: 32
+                        Pri (or TE-Class) 0: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 1: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 2: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 3: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 4: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 5: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 6: 62500 bytes/s (500000 bits/s)
+                        Pri (or TE-Class) 7: 62500 bytes/s (500000 bits/s)
+                    Resource Class/Color: 0x00000000
+                        TLV Type: 9: Resource Class/Color
+                        TLV Length: 4
+                        MPLS/TE Link Resource Class/Color: 0x00000000
+                    Unknown Link sub-TLV: 32768
+                        TLV Type: 32768: Unknown sub-TLV
+                        TLV Length: 4
+                        TLV Value
+                    Unknown Link sub-TLV: 32769
+                        TLV Type: 32769: Unknown sub-TLV
+                        TLV Length: 32
+                        TLV Value
+                    Unknown Link sub-TLV: 32770
+                        TLV Type: 32770: Unknown sub-TLV
+                        TLV Length: 4
+                        TLV Value
+        LS Type: Opaque LSA, Area-local scope
+            LS Age: 343 seconds
+            Do Not Age: False
+            Options: 0x20 (DC)
+                0... .... = DN: DN-bit is NOT set
+                .0.. .... = O: O-bit is NOT set
+                ..1. .... = DC: Demand Circuits are supported
+                ...0 .... = L: The packet does NOT contain LLS data block
+                .... 0... = NP: NSSA is NOT supported
+                .... .0.. = MC: NOT Multicast Capable
+                .... ..0. = E: NO External Routing Capability
+                .... ...0 = MT: NO Multi-Topology Routing
+            Link-State Advertisement Type: Opaque LSA, Area-local scope (10)
+            Link State ID Opaque Type: Optional Router Capabilities Opaque RI LSA (4)
+            MBZ: 0x0000
+            Advertising Router: 10.0.0.201 (10.0.0.201)
+            LS Sequence Number: 0x80000058
+            LS Checksum: 0x1306
+            Length: 176
+            Opaque Router Information LSA
+                RI TLV
+                    TLV Type: Router Informational Capabilities TLV (1)
+                    TLV Length: 4
+                    RI Options: 0xca (GRC, GRH, P2PLAN)
+                        1... .... = GRC: OSPF Graceful Restart Capable
+                        .1.. .... = GRH: OSPF Graceful Restart Helper
+                        ..0. .... = SRS: NOT OSPF Stub Router Support
+                        ...0 .... = TES: NOT OSPF Traffic Engineering Support
+                        .... 1... = P2PLAN: OSPF point-to-point over LAN
+                        .... .0.. = ETE: NOT OSPF Experimental TE
+                Dynamic Hostname TLV
+                    TLV Type: Dynamic Hostname TLV (7)
+                    TLV Length: 20
+                    Dynamic Hostname: hostname.example.org
+                Unknown Opaque RI LSA TLV
+                    TLV Type: Unknown TLV (32768)
+                    TLV Length: 120
+                    Text in the Unknown TLV: \001\002\003\004\005\006\a\b\t\020\021\022\023\024\025\026\027\030\031 !"#$%&'()0123456789@ABCDEFGHIPQRSTUVWXY`abcdefghi`pqrstuvwxy\200\201\202\203\204\205\206\207\210\211\220\221\222\223\224\225\226\227\230\231
+
