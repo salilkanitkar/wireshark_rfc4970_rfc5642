@@ -1,7 +1,10 @@
+** This patch has been accepted by wireshark community and has been committed upstream :-) **
+** Check Here: http://anonsvn.wireshark.org/viewvc?view=revision&revision=40073 **
+Yay! 
+
+Problem Definition: 
 Incorporating RFC4970 (Optional Capabilities RI LSA) and RFC5642 (Dynamic Hostname TLV) support for OSPF in wireshark
 dissector. 
-
-** This patch has been accepted by wireshark community and has been committed upstream :-) **
 
 Bug on the Wireshark Bugzilla for tracking this project: https://bugs.wireshark.org/bugzilla/show_bug.cgi?id=6631
 
